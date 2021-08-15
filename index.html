@@ -1,1 +1,165 @@
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hugo Soucy, développeur Web front-end habitant Lévis, et ceci est sa page Web — hugo.soucy.cc</title>
+<style>/* @tokens typography */:root {  --base-val: 14;  --base-font-family: "Ubuntu mono", monospace;  --base-font-size: calc(var(--base-val) * 1px);  --base-line-height: 1.6;  /* titles */  --base-h1: 2.25rem;  --base-h2: 1.75rem;  --base-h3: 1.25rem;  --base-h4: 1.125rem;  --base-h5: 1rem;  --base-h6: 0.875rem;  --hn-line-height: 1.25;  /* a space is equal 4px in rem units */  --base-space: calc(calc(4 / var(--base-val)) * 1rem);}/* @tokens colors */:root {  /* palette */  --base-aqua:  #7FFFD4;  --base-blue: #0000ff;  --base-grey:  #cccccc;  --base-indigo: #8000ff;  --base-fuchsia: #ff00ff;  --base-brightest: #f9f9f9;  --base-darkest: #111111;  --base-darkest-grey:  #333333;  /* body */  --base-bg: var(--base-brightest);  --base-fg: var(--base-darkest);  /* links */  --base-link-fg: var(--base-blue);  --base-link-bg: var(--base-aqua);  --base-link-visited: var(--base-indigo);  --base-br: var(--base-grey);  --base-br-light: var(--base-aqua);  --base-snippet-fg: var(--base-indigo);  --base-snippet-bg: white;}/* @tokens grid */:root {  --grid-xs: 20rem;/*320px/16px*/  --grid-xsm: 22.5rem;/*360px/16px*/  --grid-sm: 30rem;/*480px/16px*/  --grid-md: 48rem;/*768px/16*/  --grid-lg: 64rem;/*1024px/16*/  --grid-xl: 80rem;/*1280px/16px*/  --grid-xxl: 90rem;/*1440px/16px*/  --grid-xxl: 120rem;/*1920px/16px*/  --grid-max-width: var(--grid-md);}/* @global base */:root {  font-size: var(--base-font-size);}@media screen and (min-width: 20rem) {  :root {    font-size: calc(var(--base-font-size) + 2px);  }}@media screen and (min-width: 48rem) {  :root {    font-size: calc(var(--base-font-size) + 4px);  }}@media screen and (min-width: 120rem) {  :root {    font-size: calc(var(--base-font-size) + 12px);  }}html,body {  height: 100%;  min-height: 100%;  position: relative;}body {  background: var(--base-bg) url("/images/noise.png") repeat;  margin: 0;  padding: 0;}[hidden] {  display: none;}[hidden] + * {  margin-top: 0 !important;}footer,header,main,nav {  display: block}body,button,input,select,textarea {  color: var(--base-fg);  font-family: var(--base-font-family);  line-height: var(--base-line-height);}a {  background: linear-gradient(180deg,transparent 70%, var(--base-link-bg) 0);  color: var(--base-link-fg);  overflow-wrap: break-word;  text-decoration: none;}a:focus,a:hover {  background: linear-gradient(180deg,transparent 0%, var(--base-link-bg) 0);  color: var(--base-fg);}hr {  background: transparent;  border: dotted var(--base-br);  border-width: 1px 0 0;  display: block;  height: 1px;}pre {  background: var(--base-snippet-bg);  border: 1px dotted var(--base-snippet-fg);  font-size: .85rem;  overflow: auto;  padding: 1rem;  code {    background: transparent;  }}code,kbd {  background: var(--base-snippet-bg);  color: var(--base-snippet-fg);}kbd {  border: 1px solid var(--base-snippet-fg);  border-radius: 3px;  padding: 1px;}iframe,img {  height: auto;  max-width: 100%;}ol,ul {  padding-left: 1rem;}svg:not(:root) {  overflow: hidden;}abbr {  cursor: help;}/* @global a11y */.visuallyhidden {  border: 0;  clip: rect(1px, 1px, 1px, 1px);  height: 1px;  margin: -1px;  overflow: hidden;  padding:0;  position: absolute;  white-space: nowrap;  width: 1px;}.visuallyhidden.focusable:focus,.visuallyhidden.hoverable:hover {  clip: auto;  height: auto;  margin: 0;  overflow: visible;  padding: 0;  position: static;  white-space: inherit;  width: auto;}@media screen and (min-width: 64rem) {  .visuallyhidden--lg {    border: 0;    clip: rect(1px, 1px, 1px, 1px);    height: 1px;    margin: -1px;    overflow: hidden;    padding:0;    position: absolute;    white-space: nowrap;    width: 1px;  }  .visuallyhidden--lg.focusable:focus,  .visuallyhidden--lg.hoverable:hover {    clip: auto;    height: auto;    margin: 0;    overflow: visible;    padding: 0;    position: static;    white-space: inherit;    width: auto;  }}@media screen and (max-width: 63.9375rem) {  .visuallyhidden--to-lg {    border: 0;    clip: rect(1px, 1px, 1px, 1px);    height: 1px;    margin: -1px;    overflow: hidden;    padding:0;    position: absolute;    white-space: nowrap;    width: 1px;  }}/* @atom titles */.title-h1, h1,.title-h2, h2,.title-h3, h3,.title-h4, h4,.title-h5, h5,.title-h6, h6 {  hyphens: auto;  line-height: var(--hn-line-height);  margin-bottom: 0;}.title-h1:first-child, h1:first-child,.title-h2:first-child, h2:first-child,.title-h3:first-child, h3:first-child,.title-h4:first-child, h4:first-child,.title-h5:first-child, h5:first-child,.title-h6:first-child, h6:first-child {  margin-top: 0;}.title-h1, h1 {  font-size: var(--base-h1);}.title-h2, h2 {  font-size: var(--base-h2);}.title-h3, h3 {  font-size: var(--base-h3);}.title-h4, h4 {  font-size: var(--base-h4);}.title-h5, h5 {  font-size: var(--base-h5);}.title-h6, h6 {  font-size: var(--base-h6);}/* @atom quotes */blockquote {  border-left: 1rem solid var(--base-br);  display: block;  margin: 0;  padding: 1em 1em 1em 1rem;}/* @media screen and (min-width: 48rem) { *//*   blockquote { *//*     font-size: calc(var(--base-font-size) + 2px); *//*   } *//* } *//* @atom button */.button,[role="button"],[type="button"],[type="submit"],[type="reset"] {  appearance: none;  display: inline-flex;  font-weight: 700;  line-height: 1;  text-align: center;  text-decoration: none;  user-select: none;  vertical-align: middle;  align-items: center;  background: var(--base-darkest);  color: var(--base-brightest);  justify-content: center;  margin-bottom: var(--base-space);  margin-right: var(--base-space);  padding: calc(var(--base-space) * 2);}.button:last-child:not(:first-child),[role="button"]:last-child:not(:first-child),[type="button"]:last-child:not(:first-child),[type="submit"]:last-child:not(:first-child),[type="reset"]:last-child:not(:first-child) {  margin-right: 0;}.button svg:first-child:not(:last-child),[role="button"] svg:first-child:not(:last-child),[type="button"] svg:first-child:not(:last-child),[type="submit"] svg:first-child:not(:last-child),[type="reset"] svg:first-child:not(:last-child){  margin-right: var(--base-space);}/* @module layout */.layout {  display: flex;  flex-direction: column;  min-height: 100vh;}.layout > * {  margin-top: 1rem;  margin-bottom: 1rem;}.layout > * > * {  margin-left: auto;  margin-right: auto;  max-width: var(--grid-max-width);  padding: 2rem 1rem;}@media screen and (min-width: 15rem) {    .layout > * > * {	padding: 4rem 2rem;    }}.layout > :first-child:not(main) {  margin-top: 0;}.layout > :last-child:not(main) {  margin-bottom: 0;}.layout > main {  margin-bottom: auto;  margin-top: auto;}/* @module go-to */.go-to-nav {  align-items: center;  background: var(--base-darkest);  color: var(--base-brightest);  display: flex;  font-weight: 700;  justify-content: flex-start;  padding-right: 2rem;  text-transform: capitalize;}.go-to-nav:focus,.go-to-nav:hover {  color: var(--base-fg);}.go-to-nav > svg {  display: none;  margin-right: calc(var(--base-space) * 1);  padding: 0;}@media screen and (min-width: 20rem) {  .go-to-nav > svg {    display: block;  }}/* @module navigation */.nav {  background: var(--base-fg);  margin: 0;}.nav > div {  padding: 0;}@media screen and (min-width: 48rem) {  .nav > div {    padding-bottom: 0;    padding-top: 1px;  }}.nav__title {  color: var(--base-brightest);  padding-bottom: 1em;  padding-top: 1em;}.nav__list {  margin: 0;  padding: 0;}@media screen and (min-width: 48rem) {  .nav__list {    columns: 2 auto;    list-style-type: none;  }}.nav__item {  background: transparent;  border: solid var(--base-br-light);  border-width: 0 0 1px;}.nav__link {  background: inherit;  color: var(--base-brightest);  display: block;  font-weight: 700;  line-height: 1;  padding: 1rem 2rem;  text-decoration: none;}.nav__link[aria-current] {  background: var(--base-link-bg);  color: var(--base-fg);}.nav__link:focus,.nav__link:hover {  background: var(--base-link-fg);  color: var(--base-brightest);}.nav__link:focus {  outline: 2px solid var(--base-brightest);  outline-offset: -2px;}.nav__link > svg {  display: none;}/* @module header banner */.header-banner {  background: var(--base-darkest);  color: var(--base-brightest);  margin: 0;}.header-banner a {  color: var(--base-brightest);  padding: 1rem;}.header-banner [rel="index"] {  background: none;  color: var(--base-aqua);  flex: 0 0 auto;  font-size: 1.5rem;  font-weight: 700;  line-height: 1;  margin-right: 0.25rem;  padding: 0;}.header-banner [rel="index"] img {  height: 40px;  width: 126px;}.header-banner > div {  align-items: center;  display: flex;  justify-content: space-between;  padding-bottom: 0;  padding-top: 0;}/* @module footer-banner */.footer-banner {  background: var(--base-darkest);  color: var(--base-brightest);  font-size: 1rem;  margin-top: 0;}@media screen and (min-width: 48rem) {  .footer-banner {    font-size: 0.85rem;    line-height: 1.75;  }}.footer-banner > div {  padding-bottom: 2rem;  padding-top: 2rem;}.footer-banner a {  background: linear-gradient(180deg,transparent 70%, var(--base-link-fg) 0);  color: var(--base-brightest);  display: inline;  font-weight: 400;}.footer-banner a:focus,.footer-banner a:hover {  background: linear-gradient(180deg,transparent 0%, var(--base-link-fg) 0);}/* @module hcard */#hs.hcard h1 {  font-size: 1rem;  font-weight: 400;}#hs.hcard .p-name {  font-size: 1.25rem;}#hs.hcard .u-photo {  height: auto;  margin: 1rem auto 0;  mix-blend-mode: hard-light;}@media screen and (min-width: 30rem) {  #hs.hcard .u-photo {    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);    float: right;    margin: 1rem;    max-width: 240px;    shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);  }}/* @module hentry */.hentry > * + * {  margin-bottom: 0;  margin-top: calc(var(--base-space) * 6);}.hentry .p-content :last-child {  margin-bottom: 0;}.hentry .u-in-reply-to {  word-break: break-all;} /* hentry in feed */.hfeed .hentry {  border-top: 1px solid var(--base-br);  padding-bottom: calc(var(--base-space) * 10);  padding-top: calc(var(--base-space) * 10);  position: relative;}.hfeed .hentry:focus-within,.hfeed .hentry:hover {  background: white;  box-shadow: 0 0 0 0.75rem white;}.hfeed .hentry:first-child {  margin-top: calc(var(--base-space) * 10);}.hfeed .hentry a:not(.u-url) {  position: relative;  z-index: 1;}/* to spread the click zone */.hfeed .hentry .u-url::after {  bottom: 0;  content: '';  left: 0;  position: absolute;  right: 0;  top: 0;}.hentry__posttype {  align-items: center;  color: var(--base-darkest-grey);  display: flex;  flex-wrap: wrap;  font-size: 14px;}.hentry__posttype > svg {  margin-right: calc(var(--base-space) * 1);}.hentry__posttype > cite {  margin-left: calc(var(--base-space) * 1);}.hentry__categories {  align-items: center;  display: inline-flex;  flex-wrap: wrap;  list-style-type: none;  padding: 0;}.hentry__categories li {  display: inline-block;  margin-bottom: calc(var(--base-space) * 2);  margin-right: calc(var(--base-space) * 2);}.hentry__categories .p-category {  border: 1px dotted var(--base-br);  color: var(--base-darkest-grey);  padding: 0.25rem;}.hentry__footer {  font-size: calc(1rem * calc(13 / 16));}.hentry__footer > * + * {  margin-bottom: 0;  margin-top: calc(var(--base-space) * 4);}article.hentry > .hentry__footer {  border-top: 1px solid var(--base-grey);  padding-top: calc(var(--base-space) * 4);}/* @module hfeed */.hfeed > * + * {  margin-bottom: 0;  margin-top: calc(var(--base-space) * 6);}.hfeed__entries {  list-style-type: none;  margin: 0;  padding: 0;}/* @module hresume */.hresume > * + *:not(.h-card) {  border-top: 1px solid var(--base-br);  padding-bottom: calc(var(--base-space) * 10);  padding-top: calc(var(--base-space) * 10);}.hresume :last-child {  margin-bottom: 0;}.hresume .h-card {  margin-bottom: calc(var(--base-space) * 10);}.hresume .h-card > h2 {  font-size: var(--base-h3);}.hresume .h-card > dl {  display: table;  margin-top: calc(var(--base-space) * 6);}.hresume .h-card > dl div {  display: table-row;}.hresume .h-card dt,.hresume .h-card dd {  display: table-cell;  }.hresume .h-card dt::after {  content: ':\00A0';  display: inline;}.hresume .h-card .u-uid {  hyphens: auto;  overflow-wrap: break-word;  word-break: break-word;}.hresume .h-event {  margin-top: calc(var(--base-space) * 6);}.hresume .h-event dd {  margin-left: 0;}/* @module xfn */@media screen and (min-width: 48rem) {  .xfn {    columns: 2 auto;  }}/* @module webmentions */.webmention-container {    background: rgba(9,9,9,0.1);    font-size: 0.75rem;    margin-top: 1.5rem;    padding: 1rem;}.webmention-mention {    margin-bottom: 1rem;}.webmention-mention:last-child {    margin-bottom: 0;}.webmention-author a {    display: inline;}.webmention-author img {    display: inline-block;    margin-right: 0.5rem;    max-width: 2rem;    height: auto;}.webmention-summary {    margin: 0.5rem 0 0;}</style>
 
+  <link href="https://hugo.soucy.cc/index.html" hreflang="fr" rel="canonical">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hugo Soucy">
+  <meta name="generator" content="Satelito">
+
+  
+
+  
+    
+    <meta name="keywords" content="développeur front-end,intégrateur web,a11y,accessibilité web,Lévis,Québec">
+  
+  <!-- Feed Atom -->
+  <link href="/2021/index.xml" rel="alternate" title="Publications de l'année 2021" type="application/atom+xml">
+  <!-- Switchboard is a WebSub hub -->
+  <link href="https://hugo.soucy.cc/" rel="self">
+  <link href="https://switchboard.p3k.io/" rel="hub">
+  <!-- Webmentions -->
+  <link href="https://webmention.herokuapp.com/api/webmention" rel="webmention">
+  <link href="https://webmention.io/hugo.soucy.cc/webmention" rel="webmention">
+  <link href="https://webmention.io/hugo.soucy.cc/xmlrpc" rel="pingback">
+
+  
+    <!-- Me elsewhere -->
+    
+      <link href="https://soucy.cc/" rel="me">
+    
+      <link href="https://keyoxide.org/hkp/hugo@soucy.cc" rel="me">
+    
+      <link href="https://bandcamp.com/hs0ucy" rel="me">
+    
+      <link href="https://mastodon.sdf.org/@hs0ucy" rel="me">
+    
+      <link href="https://pixelfed.social/hs0ucy" rel="me">
+    
+      <link href="https://peertube.fedi.quebec/accounts/hs0ucy" rel="me">
+    
+      <link href="https://github.com/hs0ucy" rel="me">
+    
+      <link href="https://gitlab.com/hs0ucy" rel="me">
+    
+      <link href="https://codeberg.org/hs0ucy" rel="me">
+    
+      <link href="https://notabug.org/hs0ucy" rel="me">
+    
+      <link href="https://stackoverflow.com/users/6556626/hs0ucy" rel="me">
+    
+      <link href="https://www.openstreetmap.org/user/hs0ucy" rel="me">
+    
+      <link href="https://forumsdulibre.quebec/u/hs0ucy" rel="me">
+    
+      <link href="https://freepo.st/freepost.cgi/user/public/hs0ucy" rel="me">
+    
+      <link href="https://hs0ucy.neocities.org/" rel="me">
+    
+      <link href="http://hs0ucy.sdf.org/" rel="me">
+    
+  
+  <link href="/humans.txt" rel="author" type="text/plain">
+</head>
+  
+  <body class="layout index" id="t">
+    <svg height="0" style="position:absolute" width="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="ico_note" width="24" height="24" fill="none"><path d="M3 2h18v14h-2v2h-2v-2h-2v2h2v2h-2v2H3V2zm2 2v16h8v-6h6V4H5z" fill="currentColor"></path></symbol>
+      <symbol id="ico_bookmark" width="24" height="24" fill="none"><path d="M18 2H6v2h12v16h-2v-2h-2v-2h-4v2H8v2H6V2H4v20h4v-2h2v-2h4v2h2v2h4V2h-2z" fill="currentColor"></path></symbol>
+      <symbol id="ico_nav" width="24" height="24" fill="none"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z" fill="currentColor"></path></symbol>
+      <symbol id="ico_chevron_left" width="24" height="24" fill="none"><path d="M16 5v2h-2V5h2zm-4 4V7h2v2h-2zm-2 2V9h2v2h-2zm0 2H8v-2h2v2zm2 2v-2h-2v2h2zm0 0h2v2h-2v-2zm4 4v-2h-2v2h2z" fill="currentColor"></path></symbol>
+      <symbol id="ico_corner_down_left" width="24" height="24" fill="none"><path d="M18 16H8v2H6v-2H4v-2h2v-2h2v2h10V4h2v12h-2zM8 12v-2h2v2H8zm0 6v2h2v-2H8z" fill="currentColor"></path></symbol>
+      <symbol id="ico_article" fill="none" height="24" width="24"><path d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-2 2H7v2h10V7zM7 11h10v2H7v-2zm7 4H7v2h7v-2z" fill="currentColor"></path></symbol>
+    </svg>
+    <header class="header-banner" role="banner">
+      <div>
+        <a href="/" rel="index">
+          <picture>
+            <source srcset="/hs0ucy.svg" type="image/svg+xml">
+            <img alt="hs0ucy" src="/hs0ucy.png" height="40" width="126">
+          </picture>
+        </a>
+        <a class="go-to-nav" href="#n" id="t">
+      <svg aria-hidden="true" class="ico" height="24" role="image" width="24"><use href="#ico_nav"></use></svg>
+      <span class="visuallyhidden">Aller au&nbsp;</span>menu<span class="visuallyhidden"> de navigation</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="main" id="m">
+      <div prefix="foaf: http://xmlns.com/foaf/0.1/ dc: http://purl.org/dc/terms/">
+  <div class="h-card hcard vcard" id="hs" resource="#hs" typeof="Person" vocab="http://schema.org/">
+    <link property="sameAs" href="https://mastodon.sdf.org/@hs0ucy#">
+    <link property="sameAs" href="https://github.com/hs0ucy/#">
+
+    <h1>
+      Bonjour ! Je m'appelle <strong class="p-name" property="name">Hugo Soucy</strong>
+    </h1>
+
+    <img alt="Hugo Soucy à l'été 2018" class="hs0ucy-photo u-photo" height="205" property="image" src="https://hugo.soucy.cc/hs0ucy-2018--240px--dithering.png" width="240">
+
+    <div class="p-note">
+      <p>
+	<a class="u-url u-uid" href="https://hugo.soucy.cc/#hs" rel="me">Je</a> suis un <a href="https://hugo.soucy.cc/file/curriculum-vitae.html#cv" property="sameAs"><span class="p-job-title" property="jobTitle">développeur front-end</span></a> (ou <abbr title="Programmeur en Robustesse Esthétique">PRE</abbr>). Ici, se trouve mon port d'attache en ligne, où je me manifeste généralement sous le pseudo <strong class="p-nickname" property="foaf:nick">hs0ucy</strong>. <a href="https://keyoxide.org/hkp/hugo@soucy.cc" property="sameAs" rel="external">Je suis</a> surtout présent sur <span typeof="foaf:OnlineAccount" property="foaf:account"><a href="https://bandcamp.com/hs0ucy" property="foaf:accountProfilePage" rel="external nofollow me"><span property="dc:title">Bandcamp</span></a></span>, Freenode, <span typeof="foaf:OnlineAccount" property="foaf:account"><a href="https://mastodon.sdf.org/@hs0ucy" property="foaf:accountProfilePage" rel="external nofollow me"><span property="dc:title">Mastodon</span></a></span>, <a href="/xmpp.html">XMPP</a>; j'ai quelques commits sur <a href="https://soucy.cc/git/" rel="external">Git</a>…<a href="https://gitlab.com/hs0ucy/" rel="external">Git</a>…<span typeof="foaf:OnlineAccount" property="foaf:account"><a href="https://github.com/hs0ucy" property="foaf:accountProfilePage" rel="external nofollow me"><span property="dc:title">GitHub</span></a></span>. Hors ligne, on peut me croiser dans les rues de <span typeof="http://schema.org/PostalAddress" property="address"><strong class="p-locality" property="addressLocality">Lévis</strong></span> ou Québec. Sinon, vous pouvez communiquer avec moi par courriel à l'adresse <a href="mailto:hugo@soucy.cc" property="email" rel="me"> <span class="u-email">hugo@soucy.cc</span></a>.
+      </p>
+
+      <p>
+        <a href="https://hugo.soucy.cc/2021">Dans ma soupe</a> je vois les <strong property="foaf:interest" resource="http://dbpedia.org/resource/FLOSS" title="FLOSS">logiciels libres et open-source</strong>, comme <strong property="foaf:interest" resource="http://dbpedia.org/resource/Emacs">Emacs</strong>, <strong property="foaf:interest" resource="http://dbpedia.org/page/Dwm">dwm</strong>, <strong property="foaf:interest" resource="http://dbpedia.org/resource/OpenBSD">OpenBSD</strong> 🐡, <strong property="foaf:interest" resource="http://dbpedia.org/resource/Manjaro_Linux">Manjaro</strong>, <strong property="foaf:interest" resource="http://dbpedia.org/page/Syncthing">Syncthing</strong>, etc; les <strong property="foaf:interest" resource="http://dbpedia.org/resource/Shell_script">shell scripts</strong>, le <strong property="foaf:interest" resource="http://dbpedia.org/page/Lua_(programming_language)">Lua</strong> script, le <strong property="foaf:interest" resource="http://dbpedia.org/resource/JavaScript">JavaScript</strong>; les <strong property="foaf:interest" resource="http://dbpedia.org/page/Web_standards">standards du Web</strong> et tout ce qui touche à l'indépendance numérique des utilisateurs. J'aime la <strong property="foaf:interest" resource="http://dbpedia.org/resource/Politics">politique</strong> sans les politiciens, la <strong property="foaf:interest" resource="http://dbpedia.org/resource/Reading_(process)">lecture</strong>, le <strong property="foaf:interest" resource="http://dbpedia.org/resource/Bicycle">vélo</strong>, le <strong property="foaf:interest" resource="http://dbpedia.org/page/Coffee">café</strong> ☕, la <strong property="foaf:interest" resource="http://dbpedia.org/page/Pizza">pizza</strong> 🍕 et les <strong property="foaf:interest" resource="http://dbpedia.org/resource/Sandwich">sandwichs</strong> 🥪. Wannabe <strong property="foaf:interest" resource="http://dbpedia.org/resource/Local_food">locavore</strong> et <em property="foaf:interest" resource="https://dbpedia.org/page/Canning">appertisan</em> (canneux) 🥫.
+      </p>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <nav class="nav" id="n" data-rellink="">
+  <div>
+    <h2 class="nav__title visuallyhidden">Menu de navigation</h2>
+
+    <ol class="nav__list">
+      <li class="nav__item">
+        <a aria-current="page" class="nav__link" href="/" rel="index">Intro</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/2021">Publications</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/file/curriculum-vitae.html">
+          <abbr title="Curriculum Vitae">CV</abbr>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/archives.html">Archives</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/xfn.html">Liens</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/abonnement.html">S'abonner</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/a-propos.html">À propos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#t">Retour en-haut</a>
+      </li>
+    </ol>
+  </div>
+</nav>
+    <footer class="footer-banner">
+  <div>
+    <a href="https://webring.xxiivv.com/#random" hreflang="en">
+      <span class="visuallyhidden">Webring</span>
+      <img alt="" height="20px" src="/icon.white.svg" width="20px"></a> |
+    <a href="/biscuits.html">Ce site sans biscuit</a>
+	  <a href="https://1mb.club/" rel="external">qui ne drainera pas votre batterie</a> est propulsé par <a href="https://luarocks.org/modules/hs0ucy/satelito" rel="external">Satelito</a>. |
+    <a href="https://creativecommons.org/licenses/by-sa/2.5/ca/deed.fr" rel="external license" title="Licence Creative Commons: Partage dans les mêmes conditions 2.5 Canada. Lien externe">CC BY-SA 2.5 CA</a>
+    <br>@&nbsp;<time>2021</time>
+  </div>
+</footer>
+  
+
+</body></html>
